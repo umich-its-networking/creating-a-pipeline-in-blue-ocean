@@ -22,5 +22,10 @@ pipeline {
         sh 'echo foobar'
       }
     }
+    stage('Check') {
+      steps {
+        input 'Continue again?'
+      }
+    }
   }
 }
