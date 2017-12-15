@@ -7,6 +7,11 @@ pipeline {
     
   }
   stages {
+    stage('Confirm build') {
+      steps {
+        input 'Build?'
+      }
+    }
     stage('Build') {
       steps {
         sh 'npm install'
