@@ -12,5 +12,10 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('Test') {
+      steps {
+        input 'Continue?'
+      }
+    }
   }
 }
