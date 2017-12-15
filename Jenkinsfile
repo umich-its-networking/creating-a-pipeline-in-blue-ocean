@@ -17,7 +17,7 @@ pipeline {
         input 'Continue?'
       }
     }
-    stage('') {
+    stage('Echo') {
       steps {
         sh 'echo foobar'
       }
