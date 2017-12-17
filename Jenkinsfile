@@ -20,6 +20,7 @@ pipeline {
     stage('Test') {
       steps {
         input 'Continue?'
+        echo 'hi'
       }
     }
     stage('Echo') {
